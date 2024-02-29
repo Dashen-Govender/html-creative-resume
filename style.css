@@ -1,0 +1,174 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+  min-width: 280px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+div,
+small {
+  background-color: rgb(206, 191, 160);
+  color: rgb(30, 79, 41);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 minmax(250px, 1000px);
+  width: 80%;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.Work,
+.Skills {
+  flex: 1 1 0;
+  padding-left: 0px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Education {
+  flex: 1 1 0;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Education li {
+  width: 300px;
+  text-align: left;
+}
+
+.Work li {
+  min-width: 200px;
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.Skills li {
+  width: 100px;
+  text-align: left;
+  padding-left: 15px;
+  list-style-type: square;
+}
+
+.Awards {
+  flex: 1 1 0;
+  padding-left: 0px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Awards .Field {
+  width: 300px;
+}
+
+.Awards .Field ul {
+  padding-left: 20px;
+}
+
+.Awards .Field ul li {
+  width: 250px;
+  list-style-type: square;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(30, 79, 41);
+}
+
+.Hobbies img,
+.Contact img {
+  height: 1rem;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+footer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 875px) {
+  body {
+    font-size: 12px;
+  }
+
+  .Education {
+    padding-left: 30px;
+  }
+
+  .Awards {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .Awards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .Awards .Field {
+    flex-direction: row;
+    max-width: 200px;
+  }
+
+  .Awards .Field ul {
+    padding-left: 20px;
+  }
+
+  .Awards .Field ul li {
+    text-align: left;
+  }
+  .Education {
+    flex: 1 1 0;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Education li {
+    width: 200px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .Education {
+    padding-left: 0px;
+  }
+
+  .Awards {
+    padding-left: 0px;
+  }
+  small {
+    font-size: 7px;
+  }
+}
